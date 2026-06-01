@@ -1,0 +1,36 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{sbc-template}[2024/01/01 SBC Template]
+
+\RequirePackage{times}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{epsfig}
+\RequirePackage{amsmath}
+\RequirePackage{geometry}
+
+\geometry{
+  a4paper,
+  left=3.0cm, right=3.0cm,
+  top=3.0cm,  bottom=2.0cm
+}
+
+\columnsep 0.6cm
+\parindent 0cm
+\parskip   0.12cm
+
+%% title block
+\newcommand{\address}[1]{\gdef\@address{#1}}
+\gdef\@address{}
+
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\Large\bfseries\@title\par}
+    \vspace{0.4em}
+    {\large\@author\par}
+    \vspace{0.2em}
+    {\small\@address\par}
+  \end{center}
+  \vspace{0.5em}
+}
+
+%% resumo = abstract alias (Portuguese)
+\newenvironment{resumo}{\begin{abstract}}{\end{abstract}}
