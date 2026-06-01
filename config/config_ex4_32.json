@@ -1,0 +1,15 @@
+{
+  "cod": "INT_PERM",
+  "pop": 30,
+  "dim": 32,
+  "gen": 800,
+  "run": 1,
+  "bounds": {
+    "min": 0,
+    "max": 31
+  },
+  "pc": 0.8,
+  "pm": 0.05,
+  "crossover": "PMX",
+  "elitismo": true
+}

@@ -512,6 +512,13 @@ def executar(
     fitness_fn: Callable[[Cromossomo], float],
 ) -> list[ResultadoRun]:
     config = carregar_config(config_path)
+    return executar_com_config(config, fitness_fn)
+
+
+def executar_com_config(
+    config: Config,
+    fitness_fn: Callable[[Cromossomo], float],
+) -> list[ResultadoRun]:
     _validar_config(config)
 
     resultados: list[ResultadoRun] = []
