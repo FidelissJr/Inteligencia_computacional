@@ -3,7 +3,7 @@
   "pop": 40,
   "dim": 64,
   "gen": 1600,
-  "run": 1,
+  "run": 10,
   "bounds": {
     "min": 0,
     "max": 63

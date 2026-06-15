@@ -11,10 +11,10 @@ def main() -> None:
     # ex3()
 
     # EX4 - N-Rainhas: execute apenas UM tabuleiro por vez (descomente o config desejado)
-    #ex4("./config/config_ex4_8.json")
+    # ex4("./config/config_ex4_8.json")
     # ex4("./config/config_ex4_16.json")
-    ex4("./config/config_ex4_32.json")
-    # ex4("./config/config_ex4_64.json")
+    # ex4("./config/config_ex4_32.json")
+    ex4("./config/config_ex4_64.json")
     # ex4("./config/config_ex4_128.json")
 
 
